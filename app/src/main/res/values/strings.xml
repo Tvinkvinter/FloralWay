@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">FloralWay</string>
+    <string name="to_cart_button">В корзину</string>
+    <string name="in_cart_button">В корзине</string>
+    <string name="price_format">%1$d ₽</string>
+
+    <string-array name="bouquet_descriptions">
+        <item name="bouquet_0">Букет-комплимент из 5 Роз розовых</item>
+        <item name="bouquet_1">Букет из 7 ромашек</item>
+        <item name="bouquet_2">Букет «нежность»</item>
+        <item name="bouquet_3">Букет из 15 роз в лаконичной упаковке</item>
+        <item name="bouquet_4">Авторский пышный букет 64 с пионовидными розами</item>
+        <item name="bouquet_5">Французская роза букет</item>
+        <item name="bouquet_6">Букет из синих орхидей Космос в руках (мини)</item>
+        <item name="bouquet_7">15 роз MONDIAL в крафте</item>
+    </string-array>
+
+    <string name="store_tab">Магазин</string>
+    <string name="cart_tab">Корзина</string>
+    <string name="my_orders_tab">Мои заказы</string>
+
+    <string name="empty_cart_message">В корзине ничего нет</string>
+    <string name="bottom_bar_sum">Итого: %1$d ₽</string>
+    <string name="order_button">Заказать</string>
+
+    <string name="cancel_order_button">Отменить заказ</string>
+    <string name="order_number">Заказ №%1$d</string>
+    <string name="no_orders_message">У вас нет активных заказов</string>
+
+    <!--    Content descriptions    -->
+    <string name="bouquet_image_description">Изображение букета</string>
+    <string name="remove_button_description">Кнопка удаления</string>
+
+
+</resources>

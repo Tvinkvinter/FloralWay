@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bouquets_store_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/white"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:strokeWidth="1dp"
+    tools:layout_width="200dp"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/bouquet_img"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/bouquet_image_description"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/img_txt_guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/bouquet_0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/img_txt_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.6" />
+
+        <TextView
+            android:id="@+id/bouquet_description_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="8dp"
+            android:ellipsize="end"
+            android:lines="2"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_txt_guideline"
+            tools:text="Букет-комплимент из 5 розовых роз" />
+
+        <TextView
+            android:id="@+id/bouquet_price_tv"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginVertical="8dp"
+            android:gravity="center"
+            android:lines="1"
+            android:minEms="8"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/price_btn_guideline"
+            app:layout_constraintStart_toStartOf="@id/bouquet_description_tv"
+            app:layout_constraintTop_toBottomOf="@id/bouquet_description_tv"
+            tools:text="10000 ₽" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/price_btn_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintGuide_percent="0.4"
+            app:layout_constraintTop_toBottomOf="@id/bouquet_description_tv" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bottom_bar_order_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="8dp"
+            android:backgroundTint="@color/light_gray"
+            android:lines="1"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="8dp"
+            android:text="@string/to_cart_button"
+            android:textColor="@color/black"
+            app:autoSizeMaxTextSize="16sp"
+            app:autoSizeMinTextSize="7sp"
+            app:autoSizeTextType="uniform"
+            app:cornerRadius="10dp"
+            app:icon="@drawable/ic_cart"
+            app:iconPadding="2dp"
+            app:iconSize="12dp"
+            app:iconTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/price_btn_guideline"
+            app:layout_constraintTop_toBottomOf="@id/bouquet_description_tv" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/in_cart_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="8dp"
+            android:backgroundTint="@color/green"
+            android:lines="1"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="8dp"
+            android:text="@string/in_cart_button"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            app:autoSizeMaxTextSize="16sp"
+            app:autoSizeMinTextSize="7sp"
+            app:autoSizeTextType="uniform"
+            app:cornerRadius="10dp"
+            app:icon="@drawable/ic_check_mark"
+            app:iconPadding="0dp"
+            app:iconSize="12dp"
+            app:iconTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/price_btn_guideline"
+            app:layout_constraintTop_toBottomOf="@id/bouquet_description_tv" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
